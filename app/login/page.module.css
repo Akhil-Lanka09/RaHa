@@ -1,0 +1,133 @@
+.bg {
+  min-height: calc(100vh - 64px);
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(59,13,13,0.08) 0%, transparent 60%),
+    var(--ivory2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 5vw;
+}
+
+.card {
+  background: var(--wh);
+  border: 1px solid rgba(59,13,13,0.1);
+  border-radius: 10px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 8px 48px rgba(59,13,13,0.08);
+}
+
+.logoArea {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.logoMain {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--burg);
+  letter-spacing: 1px;
+}
+
+.logoSub {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--tl);
+  margin-top: 3px;
+}
+
+.tabs {
+  display: flex;
+  border: 1px solid rgba(59,13,13,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.tabBtn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--tl);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabActive {
+  background: var(--burg);
+  color: var(--saff3);
+}
+
+.form { display: flex; flex-direction: column; gap: 4px; }
+
+.errMsg {
+  background: #fef5f5;
+  border: 1px solid rgba(192,24,24,0.2);
+  color: #c01818;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  color: var(--tl);
+  font-size: 0.75rem;
+}
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(59,13,13,0.1);
+}
+
+.waBtn {
+  display: block;
+  text-align: center;
+  padding: 11px;
+  border: 1px solid rgba(59,13,13,0.15);
+  border-radius: 4px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--tm);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.waBtn:hover { background: var(--saff4); border-color: var(--saffron); color: var(--burg); }
+
+.pwdBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.pwdFill {
+  height: 3px;
+  border-radius: 2px;
+  transition: all 0.3s;
+  flex: 1;
+}
+
+.pwdBar span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: 'DM Mono', monospace;
+  min-width: 45px;
+}

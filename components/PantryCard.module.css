@@ -1,0 +1,112 @@
+.card {
+  background: var(--card);
+  border: 1px solid rgba(200,134,10,0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(200,134,10,0.1);
+}
+
+.imgWrap {
+  position: relative;
+  aspect-ratio: 4/3;
+  background: var(--ivory);
+  border-bottom: 1px solid rgba(59,13,13,0.06);
+}
+
+.img { object-fit: cover; }
+
+.badges {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--burg);
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--saffron);
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: var(--tm);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.sizeBtn {
+  background: var(--bg);
+  border: 1px solid rgba(59,13,13,0.1);
+  padding: 10px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--td);
+  text-align: center;
+  transition: all 0.2s;
+}
+.sizeBtn:hover { border-color: var(--saffron); }
+
+.sizeActive {
+  background: var(--saff4);
+  border-color: var(--saffron);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(59,13,13,0.08);
+  padding-top: 16px;
+}
+
+.priceWrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--td);
+}

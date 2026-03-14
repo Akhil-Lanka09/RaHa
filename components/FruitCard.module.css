@@ -1,0 +1,154 @@
+.card {
+  background: var(--card);
+  border: 1px solid rgba(139,58,15,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(139,58,15,0.15);
+  transform: translateY(-2px);
+}
+
+.imgArea {
+  height: 130px;
+  background: linear-gradient(135deg, var(--spice3) 0%, #fef3e8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emoji { font-size: 3.5rem; }
+
+.seasonal {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.65rem;
+  font-family: 'DM Mono', monospace;
+  background: rgba(212,96,26,0.1);
+  color: var(--spice2);
+  border: 1px solid rgba(212,96,26,0.2);
+  padding: 3px 8px;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+
+.cardBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.body { padding: 20px; }
+
+.serves {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.63rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--spice2);
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--spice);
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: var(--tl);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 0.82rem;
+  color: var(--tm);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.itemsWrap { margin-bottom: 14px; }
+
+.itemsLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--tl);
+  margin-bottom: 6px;
+}
+
+.itemsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.item {
+  background: var(--spice3);
+  color: var(--spice);
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(139,58,15,0.12);
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid rgba(139,58,15,0.08);
+}
+
+.priceLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--tl);
+}
+
+.price {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--spice);
+}
+
+.code {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--tl);
+  margin-top: 1px;
+}
+
+.addBtn {
+  background: var(--spice);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.addBtn:hover {
+  background: var(--spice2);
+  transform: translateY(-1px);
+}

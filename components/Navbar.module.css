@@ -1,0 +1,142 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  min-height: 64px;
+  background: var(--burg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5vw;
+  box-shadow: 0 2px 24px rgba(59,13,13,0.5);
+  border-bottom: 1px solid rgba(200,134,10,0.25);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoMain {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--saff3);
+  letter-spacing: 1px;
+}
+
+.logoSub {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(200,134,10,0.6);
+  margin-top: 2px;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.tabs::-webkit-scrollbar { height: 0; }
+
+.tab {
+  padding: 7px 14px;
+  border-radius: 4px;
+  font-size: 0.73rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: rgba(245,217,138,0.7);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Jost', sans-serif;
+}
+
+.tab:hover {
+  background: rgba(200,134,10,0.12);
+  color: var(--saff3);
+}
+
+.tab.active {
+  background: var(--saffron);
+  color: var(--burg);
+  font-weight: 600;
+}
+
+.cartBadge {
+  background: var(--saff3);
+  color: var(--burg);
+  border-radius: 10px;
+  padding: 1px 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+}
+
+.tab.active .cartBadge {
+  background: var(--burg);
+  color: var(--saff3);
+}
+
+.userPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(245,217,138,0.12);
+  border: 1px solid rgba(245,217,138,0.2);
+  padding: 3px 10px 3px 5px;
+  border-radius: 20px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  background: var(--saffron);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--burg);
+  font-family: 'Jost', sans-serif;
+}
+
+.userName {
+  font-size: 0.72rem;
+  color: var(--saff3);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 10px 4vw;
+  }
+  .tabs {
+    order: 3;
+    width: 100%;
+  }
+}

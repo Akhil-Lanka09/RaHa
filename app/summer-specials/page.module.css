@@ -1,0 +1,69 @@
+.hero {
+  padding: 60px 5vw 70px;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(80, 20, 5, 0.95) 0%, rgba(120, 40, 8, 0.92) 100%),
+    #3b0d0d;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoStrip {
+  background: var(--card);
+  border-bottom: 1px solid rgba(59,13,13,0.08);
+  padding: 20px 5vw;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.infoIcon { font-size: 1.3rem; opacity: 0.8; }
+
+.infoLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--tl);
+  margin-bottom: 1px;
+}
+
+.infoValue {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--td);
+}
+
+.header { margin-bottom: 32px; }
+
+.headerNote {
+  font-size: 0.82rem;
+  color: var(--tl);
+  margin-top: -6px;
+}
+
+.orderNote { padding: 28px 5vw 40px; }
+
+.orderNoteInner {
+  background: var(--saff4);
+  border: 1px solid rgba(200,134,10,0.2);
+  border-radius: 6px;
+  padding: 16px 24px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--tm);
+  line-height: 1.6;
+  max-width: 960px;
+  margin: 0 auto;
+}

@@ -1,0 +1,137 @@
+.hero {
+  padding: 60px 5vw 70px;
+  background:
+    linear-gradient(135deg, rgba(59,13,13,0.9) 0%, rgba(92,26,26,0.9) 100%),
+    #2a0808;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.methodCard {
+  padding: 28px 24px;
+  border-radius: 8px;
+  border: 1px solid;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.methodCard:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+
+.methodIcon { font-size: 2rem; }
+
+.methodTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--td);
+}
+
+.methodDesc {
+  font-size: 0.83rem;
+  color: var(--tm);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.methodCta {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Form */
+.formSection {
+  padding: 60px 5vw;
+  background: var(--ivory);
+  border-top: 1px solid rgba(59,13,13,0.07);
+}
+
+.formWrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.formHeader { margin-bottom: 32px; }
+
+.form { display: flex; flex-direction: column; gap: 4px; }
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .fieldRow { grid-template-columns: 1fr; }
+}
+
+/* Zones */
+.zonesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 860px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.zoneChip {
+  background: var(--saff4);
+  border: 1px solid rgba(200,134,10,0.2);
+  color: var(--tm);
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* FAQ */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: var(--card);
+  border: 1px solid rgba(59,13,13,0.07);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+
+.faqQ {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--burg);
+  margin-bottom: 6px;
+}
+
+.faqA {
+  font-size: 0.85rem;
+  color: var(--tm);
+  line-height: 1.6;
+  font-weight: 300;
+}
